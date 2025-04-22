@@ -1,44 +1,101 @@
-# Challenge_3SEM 
+# 🛵 MotoMap – Sistema Inteligente de Gestão de Pátios Mottu
 
-## 🔄 Projeto: Sistema de Gestão de Pátio Mottu – Web + Mobile
-### 🎯 Objetivo do Projeto
-Desenvolver uma plataforma integrada para gestão e visualização da posição das motos nos pátios da Mottu, acessível tanto via navegador (versão web) quanto em smartphones (versão mobile), com possibilidades futuras de integração com visão computacional, IoT e sensores físicos.
+> Solução multiplataforma para gestão de localização de motos nos pátios da Mottu, com suporte Web e Mobile, e integração entre APIs .NET e Java.
 
-### 🧩 Funcionalidade Central (MVP)
-✅ Cadastro e edição de motos
-✅ Registro de entrada e saída de motos no pátio
-✅ Alocação manual das motos em posições pré-definidas
-✅ Visualização do layout do pátio em um mapa simbólico
-✅ Histórico e relatórios simples
-✅ Alertas manuais (ex: moto não movimentada há 7 dias)
+---
 
-### 🌐 Versão Web
-Usuários: Administradores, supervisores, equipe de planejamento
-Funcionalidades específicas:
-Painel administrativo com CRUD de motos, operadores e pátios
-Visualização completa do pátio em grade ou mapa ilustrativo
-Relatórios e filtros mais completos
-Gerenciamento de permissões
+## 📌 Visão Geral
 
-### 📱 Versão Mobile (React Native)
-Usuários: Operadores que trabalham diretamente no pátio
-Funcionalidades específicas:
-Check-in/check-out rápido de motos
-Escolha de posição da moto no pátio via lista ou grade simplificada
-Acompanhamento básico do status do pátio
-Interface otimizada para toque, com menos campos e navegação direta
+**MotoMap** é uma plataforma desenvolvida para resolver o problema de controle manual da localização de motos nos pátios da Mottu. Com operações em mais de 100 filiais no Brasil e México, a solução visa aumentar a produtividade, segurança e organização da frota.
 
-### 🧱 Tecnologias Sugeridas
-Frontend Web: Next.js ou React.js + Tailwind CSS
-Mobile: React Native (Expo para facilitar)
-Backend: Node.js (Express) ou Firebase Functions
-Banco de Dados: Firebase, Supabase ou PostgreSQL
-Hospedagem: Vercel (Web) + Expo Go ou APK (Mobile)
-Autenticação: Firebase Auth ou JWT
+A aplicação é composta por:
 
-### 🧠 Visão de Futuro: Evolução do Projeto
-Depois que você tiver as disciplinas de IoT e Visão Computacional, você pode:
-Integrar leitura de QR Code ou RFID nas motos
-Usar câmeras com OpenCV para identificar e localizar motos automaticamente
-Implantar sensores nos espaços do pátio e rastrear posições automaticamente
-Implementar um mini dashboard em tempo real com movimentações ao vivo
+- 🔗 **Duas APIs RESTful**: uma desenvolvida em ASP.NET Core e outra em Spring Boot
+- 💻 **Frontend Web**: para supervisores e administradores gerenciarem as motos e pátios
+- 📱 **App Mobile**: para operadores realizarem check-in/check-out das motos e visualização rápida
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+| Camada           | Tecnologia                     |
+|------------------|--------------------------------|
+| API Principal    | ASP.NET Core + EF Core + Oracle|
+| API Secundária   | Spring Boot + Spring Data JPA  |
+| Banco de Dados   | Oracle                         |
+| Web Frontend     | React (Next.js)                |
+| Mobile           | React Native + Expo            |
+| Hospedagem       | Azure VM + Docker              |
+
+---
+
+## 🧱 Arquitetura da Solução
+
+A solução é dividida em dois domínios de responsabilidade, com APIs distintas:
+
+### 📦 API .NET – `api-dotnet.mottumap.com`
+
+> Responsável pelo cadastro e gerenciamento de motos e filiais.
+
+**Principais rotas:**
+- `GET /motos`
+- `POST /motos`
+- `PUT /motos/{id}`
+- `DELETE /motos/{id}`
+- `GET /filiais`
+
+### ⚙️ API Java – `api-java.mottumap.com`
+
+> Responsável pela movimentação de motos no pátio e histórico de posições.
+
+**Principais rotas:**
+- `GET /movimentacoes`
+- `POST /movimentacoes`
+- `GET /posicoes`
+- `GET /filiais/{id}/mapa`
+
+---
+
+## 🧩 Funcionamento Integrado
+
+A plataforma web e mobile se comunica com ambas as APIs conforme o contexto:
+
+| Ação no Sistema | API Utilizada |
+|-----------------|---------------|
+| Cadastrar nova moto | .NET        |
+| Consultar filiais   | .NET        |
+| Visualizar mapa do pátio | Java  |
+| Registrar movimentação de moto | Java |
+| Histórico de motos por posição | Java |
+
+Ambas as APIs seguem o mesmo padrão de DTOs e retornos REST para facilitar o consumo no frontend.
+
+---
+
+## 🌐 Web App (Administração)
+
+Funcionalidades:
+- Cadastro de motos e filiais
+- Visualização do layout do pátio com posições ocupadas
+- Relatórios simples por filial
+- Gerenciamento de usuários e permissões
+
+---
+
+## 📱 Mobile App (Operadores)
+
+Funcionalidades:
+- Login de operador
+- Visualização do pátio e motos por posição
+- Registro de entrada/saída de motos
+- Histórico local via `AsyncStorage`
+
+---
+
+## 🧪 Como Rodar Localmente
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/seuusuario/mottomap
+cd mottomap
