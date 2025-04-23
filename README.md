@@ -99,3 +99,76 @@ Funcionalidades:
 ```bash
 git clone https://github.com/seuusuario/mottomap
 cd mottomap
+```
+
+### 2. Iniciar APIs
+
+#### .NET API
+```bash
+cd backend-dotnet
+dotnet ef database update
+dotnet run
+```
+
+#### Java API
+```bash
+cd backend-java
+./mvnw spring-boot:run
+```
+
+> Certifique-se de ter o Oracle ou H2 configurado
+
+### 3. Iniciar Web App
+
+```bash
+cd frontend-web
+npm install
+npm run dev
+```
+
+### 4. Iniciar Mobile App
+
+```bash
+cd app-mobile
+npm install
+npx expo start
+```
+
+---
+
+## 📊 Organização dos Diretórios
+
+```
+mottomap/
+├── backend-dotnet/         # API em ASP.NET Core
+├── backend-java/           # API em Spring Boot
+├── frontend-web/           # Aplicação Web (React)
+├── app-mobile/             # Aplicação Mobile (React Native)
+├── database/               # Modelos DER, MER e scripts SQL
+└── docs/                   # Documentação, wireframes, diagramas
+```
+
+---
+
+## 🚧 Futuras Integrações
+
+A arquitetura do MotoMap foi preparada para futuras adições de:
+
+- Leitura automática via sensores (IoT)
+- Detecção por câmera (Visão Computacional)
+- Alertas automatizados via sensores de movimento e status
+
+Essas tecnologias serão implementadas no segundo semestre, em conjunto com as disciplinas específicas.
+
+---
+
+## 👥 Equipe
+
+- Caike Dametto – RM558614 
+- Guilherme Jannunzi – RM558461
+
+---
+
+## 📎 Licença
+
+Projeto desenvolvido exclusivamente para fins acadêmicos na FIAP – 2º Ano de Análise e Desenvolvimento de Sistemas (Challenge 2025).
