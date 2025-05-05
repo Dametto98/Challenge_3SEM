@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9680EB4-79AB-C46A-709A-5755EDBA0526" name="T_MM_PROBLEMA">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>BA8A7EB2-0ABB-AF9F-E319-672F8D834344</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_PROBLEMA" id="6701A2BE-C094-66DA-D85C-F0326D8E302E">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>83FC47CE-9341-0B96-D486-82A93642FA85</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_MOTO" id="8813C335-09E0-1ADB-D3A8-153FE40543DF">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>C0ECDEFA-F712-30B3-4470-33E367A4D587</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_USUARIO" id="CBD76780-2839-1417-048E-012FFA6E34AB">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>DB88533F-E22E-732A-62CD-4B42CDF64729</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TIPO" id="EA243BFA-CF9D-A4D6-9FB5-0352F719B789">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>4A4CC418-CC5A-4306-5F06-61E3C24442B0</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DESCRICAO" id="DE005F44-4108-9143-0AB1-ACB525FA6324">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>63C1F074-C2AB-8BCB-1D7E-7229FD5D09BE</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_REGISTRO" id="2F9D55A1-AE55-D191-907E-40484980B6C8">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>1AE1B64B-C372-6600-C332-CF6FB1817445</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_RESOLVIDO" id="67754FDD-40A4-D506-F037-655A1351C2A3">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>A12F154D-13CD-8EC7-4C67-E6F6387E2DDC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_MM_USUARIO_CD_USUARIO" id="52DB84F3-A7F2-1789-53CB-7F31EADA6D74">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>CD3B5913-A096-1B84-D417-6CB15AF111DF</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFF7EC5F-E569-E1F0-2358-E3AD0FA6E826" referredColumn="EFF566A3-F658-0E8C-04EE-7C76B9CBB628"/>
+</associations>
+</Column>
+<Column name="T_MM_MOTO_CD_MOTO" id="3E5DE8D3-8B64-0EDB-8C3D-C1ECBB01BA92">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>23DAF279-D493-9F6A-98A1-13FBB2576429</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55446B31-4186-0CFA-1FF4-DCA3A9F62BDE" referredColumn="7211B66C-6A44-6881-5946-390CB400CEE0"/>
+</associations>
+</Column>
+<Column name="T_MM_MOTO_T_MM_FILIAL_CD_FILIAL" id="7DA6B609-E846-A3B7-68FD-9209503BE58E">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>F06874F6-D1AD-F220-5C2B-5AD928C792DF</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55446B31-4186-0CFA-1FF4-DCA3A9F62BDE" referredColumn="676FBCF2-4EDF-B5DA-B55F-7DD1E611200A"/>
+</associations>
+</Column>
+<Column name="CD_FILIAL1" id="4FCE1F46-D5F9-DA69-9543-4887341DF1AB">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>7FF67DA8-8B66-E773-E8B7-3C892DAF50EF</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C436AF50-2645-829D-89F5-6C5F635D3D87" name="T_MM_PROBLEMA_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>BC1A4F81-0458-E48F-A7CD-6F90FE3054A6</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6701A2BE-C094-66DA-D85C-F0326D8E302E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25C3F5CC-4B1E-ED31-8ECC-A53ED6196AAD" name="T_MM_PROBLEMA_T_MM_MOTO_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>866127CE-F5A8-AD7D-7464-75F734DDF7CC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E5DE8D3-8B64-0EDB-8C3D-C1ECBB01BA92"/>
+<colUsage columnID="7DA6B609-E846-A3B7-68FD-9209503BE58E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EC63BB1-6DEB-896F-2C93-63B2E9A4A0D4" name="T_MM_PROBLEMA_T_MM_USUARIO_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>002AEA20-F229-F7E3-CCBF-48F17B543817</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52DB84F3-A7F2-1789-53CB-7F31EADA6D74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PSICAO" directorySegmentName="seg_0" id="25F78809-D239-65E7-3705-C2B0633B0C97">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:52:50 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<sourcePk>E0E46AEA-EE05-211A-708C-B78428295FF8</sourcePk>
+<identifying>false</identifying>
+<nameOnTarget>CD_POSICAO</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EAC17B87-C230-59A1-6F42-4671B55D0064</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5FE91113-4F30-EAC5-1C81-7979F4DF378E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

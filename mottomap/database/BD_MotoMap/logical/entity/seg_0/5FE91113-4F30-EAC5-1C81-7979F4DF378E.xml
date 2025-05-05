@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FE91113-4F30-EAC5-1C81-7979F4DF378E" name="T_MM_HISTORICO_POSICAO">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:20:36 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_HISTORICO" id="CD4877A9-0D84-EDE5-013F-478BE98231A9">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:21:06 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MOTO" id="C50F1282-D9EB-6DFA-E9E5-FB2B65086369">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:22:30 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_POSICAO" id="238C436D-92F5-A71B-450D-A14C48C41915">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:23:10 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_INICIO" id="62864142-158B-7693-9A7A-D5F67A7B2120">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:25:09 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_FIM" id="7E79A039-398B-E26E-60B0-85E122D24E7A">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:25:26 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MOTO1" id="740594EC-5F17-8D99-7D3E-8D58637B973B">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:52:07 UTC</createdTime>
+<generatorID>3EC1353C-FC74-D503-2A91-91CDC87F54F4</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_FILIAL" id="86148626-6A56-1119-4942-A8BCCE3ACD2F">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:52:07 UTC</createdTime>
+<generatorID>3EC1353C-FC74-D503-2A91-91CDC87F54F4</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_FILIAL1" id="AF02FE01-B355-E9C8-EECF-F3099DC68412">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:52:07 UTC</createdTime>
+<generatorID>3EC1353C-FC74-D503-2A91-91CDC87F54F4</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_POSICAO1" id="DF141439-CDAC-2F2B-1798-F1C2555BF256">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:52:50 UTC</createdTime>
+<generatorID>25F78809-D239-65E7-3705-C2B0633B0C97</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>7DC69426-5D78-B549-8C52-4B254F23EABA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="21CB3845-CACB-CF77-CEB8-D4023E4B16BA" name="PK_HISTORICO">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:21:45 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>CD4877A9-0D84-EDE5-013F-478BE98231A9</newElementsIDs>
+<usedAttributes>
+<attributeRef>CD4877A9-0D84-EDE5-013F-478BE98231A9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

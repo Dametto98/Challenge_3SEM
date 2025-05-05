@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC447121-7695-8606-6DFB-0DCBAEAE8983" name="T_MM_FILIAL">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>F7CC4AF3-2B75-BE1B-2F6F-4A606E7B7A85</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_FILIAL" id="574E139A-0128-4C24-5A37-6B83D23A4DDB">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>C069E5A2-11B0-E8FB-8613-FF27D909E467</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_FILIAL" id="D0D71642-B398-4827-7FF6-77A526A657E4">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>F8E0EA02-C765-C3ED-1C66-973F50388F6A</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ENDERECO" id="84F915B4-C90D-063B-F376-18BA38DB8210">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>7E5C1FC6-FC62-029A-8FAA-38985273FA67</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE" id="33C7C453-7975-C7BE-FC7C-629E4CF580A0">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>3D023B20-232B-6A53-2DF0-EE4D2F7443FC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_ESTADO" id="25D8BE87-2EA9-9BB5-B861-C3B3B2682587">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>E0A6C0AE-5B68-D35F-6CDC-33CFB047CD29</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LINHA" id="A8F17EAC-57EA-3BB7-87D3-8EB68A3F4638">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>69493602-1C65-8092-2C05-40AD86D158CF</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_COLUNA" id="35D9C47F-C24C-60F1-AD9A-51341B82CBFE">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>56C8593B-56C6-F2BA-7F3C-36C517F98FC6</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_CAPACIDADE_MAX" id="A0EBC66F-88BA-C2F6-0A98-10028ACA162B">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>E76C1CB0-3A96-0185-9D5E-869CC29627BA</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD774198-6C2F-69F1-089E-1CAFBE4B6D4A" name="T_MM_FILIAL_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>9CC3CAEE-6DFE-F7B6-5676-689323A4F0FC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="574E139A-0128-4C24-5A37-6B83D23A4DDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

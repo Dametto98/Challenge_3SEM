@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="55446B31-4186-0CFA-1FF4-DCA3A9F62BDE" containerWithKeyObject="B9680EB4-79AB-C46A-709A-5755EDBA0526" localFKIndex="25C3F5CC-4B1E-ED31-8ECC-A53ED6196AAD" name="T_MM_PROBLEMA_T_MM_MOTO_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:54:30 UTC</createdTime>
+<generatorID>866127CE-F5A8-AD7D-7464-75F734DDF7CC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<referredTableLongName>T_MM_MOTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AC21258B-BC41-5DF4-09BF-7044A96D5414</referredTableID>
+<keyObject>9D1770D1-4106-03D7-988B-CB6DD0676C90</keyObject>
+<referredKeyID>9D1770D1-4106-03D7-988B-CB6DD0676C90</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_MOTO,T_MM_FILIAL_CD_FILIAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

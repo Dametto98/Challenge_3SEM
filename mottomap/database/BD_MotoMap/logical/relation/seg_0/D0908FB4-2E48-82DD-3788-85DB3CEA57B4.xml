@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CD_FILIAL" directorySegmentName="seg_0" id="D0908FB4-2E48-82DD-3788-85DB3CEA57B4">
+<createdBy>User</createdBy>
+<createdTime>2025-05-01 23:49:27 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<sourcePk>9CC3CAEE-6DFE-F7B6-5676-689323A4F0FC</sourcePk>
+<identifying>true</identifying>
+<nameOnTarget>CD_FILIAL</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F7CC4AF3-2B75-BE1B-2F6F-4A606E7B7A85</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C1821C4A-7387-6A4C-98E4-6774A0467486</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA8A7EB2-0ABB-AF9F-E319-672F8D834344" name="T_MM_PROBLEMA">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:25:58 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_PROBLEMA" id="83FC47CE-9341-0B96-D486-82A93642FA85">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:26:12 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MOTO" id="C0ECDEFA-F712-30B3-4470-33E367A4D587">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:27:13 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_USUARIO" id="DB88533F-E22E-732A-62CD-4B42CDF64729">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:27:41 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TIPO" id="4A4CC418-CC5A-4306-5F06-61E3C24442B0">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:28:23 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DESCRICAO" id="63C1F074-C2AB-8BCB-1D7E-7229FD5D09BE">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:29:25 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_REGISTRO" id="1AE1B64B-C372-6600-C332-CF6FB1817445">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:28:55 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_RESOLVIDO" id="A12F154D-13CD-8EC7-4C67-E6F6387E2DDC">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:32:52 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_USUARIO1" id="CD3B5913-A096-1B84-D417-6CB15AF111DF">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:51:00 UTC</createdTime>
+<generatorID>002AEA20-F229-F7E3-CCBF-48F17B543817</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>A830439B-C8B7-58DF-C791-5B21F46ED3CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MOTO1" id="23DAF279-D493-9F6A-98A1-13FBB2576429">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:51:40 UTC</createdTime>
+<generatorID>866127CE-F5A8-AD7D-7464-75F734DDF7CC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_FILIAL" id="F06874F6-D1AD-F220-5C2B-5AD928C792DF">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:51:40 UTC</createdTime>
+<generatorID>866127CE-F5A8-AD7D-7464-75F734DDF7CC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_FILIAL1" id="7FF67DA8-8B66-E773-E8B7-3C892DAF50EF">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:51:40 UTC</createdTime>
+<generatorID>866127CE-F5A8-AD7D-7464-75F734DDF7CC</generatorID>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC1A4F81-0458-E48F-A7CD-6F90FE3054A6" name="PK_PROBLEMA">
+<createdBy>User</createdBy>
+<createdTime>2025-05-05 01:26:50 UTC</createdTime>
+<ownerDesignName>bd-inicial</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>83FC47CE-9341-0B96-D486-82A93642FA85</newElementsIDs>
+<usedAttributes>
+<attributeRef>83FC47CE-9341-0B96-D486-82A93642FA85</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
