@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4B4F4394-F0AE-8152-2BB1-D413F4774486" containerWithKeyObject="0139490B-E587-E755-5822-4D175A4224B2" localFKIndex="4A297D17-2FC3-31F8-01EB-792011C7A9E1" name="T_MM_MOVIMENTACAO_T_MM_USUARIO_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>0DD57813-E3B7-40B4-1F57-DCE07F218F59</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<referredTableLongName>T_MM_USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2D10FED5-04FF-F435-A5CA-5E9D6A6999F7</referredTableID>
+<keyObject>B1FD182F-0273-FE0E-A93F-B0399834BE92</keyObject>
+<referredKeyID>B1FD182F-0273-FE0E-A93F-B0399834BE92</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_USUARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

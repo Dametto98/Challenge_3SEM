@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1821C4A-7387-6A4C-98E4-6774A0467486" name="T_MM_MOTO">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:40:29 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="CD_MOTO" id="F8F6B356-ED08-38F3-7421-38C28D7A3E4A">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:41:00 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -28,11 +28,11 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_FILIAL" id="9A6042D6-E5DE-E5EA-9765-EDC38DCF6604">
-<createdBy>User</createdBy>
-<createdTime>2025-05-01 23:49:27 UTC</createdTime>
-<generatorID>D0908FB4-2E48-82DD-3788-85DB3CEA57B4</generatorID>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Attribute name="CD_FILIAL" id="E7165272-9FB8-1A08-6BD2-C58B4D6335A3">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 22:59:48 UTC</createdTime>
+<generatorID>1AC975D4-CD65-020A-ECDB-65454BB26D22</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -41,12 +41,12 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DS_PLACA" id="1C23853D-F7F9-ADA6-9FDA-698EC67B6334">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:42:08 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -60,7 +60,7 @@
 <Attribute name="DS_CHASSI" id="D174AC5C-CC65-A0A2-3C70-4C3CB003E492">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 01:32:04 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -71,7 +71,7 @@
 <Attribute name="NM_MODELO" id="9336CD10-1FDE-EC9E-0590-080C58B15967">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:42:49 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -84,7 +84,7 @@
 <Attribute name="NR_ANO" id="D34992A2-FB79-8E2B-6BE2-360217EF3B66">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:43:34 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -98,7 +98,7 @@
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:44:05 UTC</createdTime>
 <comment><![CDATA["Ativa", "Inativa", etc.]]></comment>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -113,15 +113,14 @@
 <identifier id="40678E38-CE6B-A158-D765-6ADD674A7D80" name="PK_MOTO">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:45:03 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
 <pk>true</pk>
-<newElementsIDs>F8F6B356-ED08-38F3-7421-38C28D7A3E4A,D0908FB4-2E48-82DD-3788-85DB3CEA57B4,9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</newElementsIDs>
+<newElementsIDs>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</newElementsIDs>
 <usedAttributes>
 <attributeRef>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</attributeRef>
-<attributeRef>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</attributeRef>
 <attributeRef>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</attributeRef>
 </usedAttributes>
 </identifier>

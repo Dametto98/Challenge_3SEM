@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CB646E0-D40C-B8E4-720D-11D9F746EC93" name="T_MM_HISTORICO_POSICAO">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>5FE91113-4F30-EAC5-1C81-7979F4DF378E</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_HISTORICO" id="075991FF-7592-2BC7-3575-048D539B96C2">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>CD4877A9-0D84-EDE5-013F-478BE98231A9</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_MM_MOTO_CD_MOTO" id="33F92772-8CCA-2D4D-6C43-1C1C96E4E7F1">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>F99F39E2-C315-2A1B-6CD2-EE63F6C64618</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83E61E56-B6A5-5F10-98E3-455D1A318968" referredColumn="71FD4685-BCDF-E64F-7AE0-A870BE850274"/>
+</associations>
+</Column>
+<Column name="T_MM_POSICAO_PATIO_CD_POSICAO" id="B1F66F0D-6CCF-98DB-999E-01858120F5FA">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>DADC32AE-AD69-965E-1E76-40D37E82D1A5</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D67A1DCA-CF90-1E24-B57E-A6ED7B3F7205" referredColumn="50830DC3-EADC-B7EB-C46C-A86D54AF24E3"/>
+</associations>
+</Column>
+<Column name="DT_INICIO" id="2737D200-FCC0-A8EC-B1EE-D262068322A5">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>62864142-158B-7693-9A7A-D5F67A7B2120</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIM" id="64FC0F7B-74AF-53C4-33D4-7D8762E45423">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>7E79A039-398B-E26E-60B0-85E122D24E7A</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_FILIAL1" id="5157ADEC-1E94-234A-0885-8009339B45F7">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>AF02FE01-B355-E9C8-EECF-F3099DC68412</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_FILIAL" id="A21CC446-C7DE-4A02-F14B-F490749F1AAC">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>83664306-1864-1819-C361-D2F74D9A11FE</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="287B1464-F012-4D2B-B425-18ECC5643C21" name="T_MM_HISTORICO_POSICAO_PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>21CB3845-CACB-CF77-CEB8-D4023E4B16BA</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="075991FF-7592-2BC7-3575-048D539B96C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84229679-1EE6-072C-29A1-B4BD55E41A1D" name="T_MM_HISTORICO_POSICAO_T_MM_MOTO_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>95B7DFA0-2E8D-81FB-5EE3-740591907565</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33F92772-8CCA-2D4D-6C43-1C1C96E4E7F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89D27045-9AA5-FB04-B0F1-B85C268B91FE" name="T_MM_HISTORICO_POSICAO_T_MM_POSICAO_PATIO_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>3B37A100-7E05-5799-F000-D364B98B0670</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1F66F0D-6CCF-98DB-999E-01858120F5FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

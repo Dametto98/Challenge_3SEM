@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PSICAO" directorySegmentName="seg_0" id="25F78809-D239-65E7-3705-C2B0633B0C97">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:52:50 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CD_PATIO" directorySegmentName="seg_0" id="3B37A100-7E05-5799-F000-D364B98B0670">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:10:22 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
 <sourcePk>E0E46AEA-EE05-211A-708C-B78428295FF8</sourcePk>
 <identifying>false</identifying>
-<nameOnTarget>CD_POSICAO</nameOnTarget>
+<nameOnTarget>CD_PATIO</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

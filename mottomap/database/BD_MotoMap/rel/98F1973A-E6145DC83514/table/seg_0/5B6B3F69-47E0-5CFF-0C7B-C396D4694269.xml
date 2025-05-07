@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B6B3F69-47E0-5CFF-0C7B-C396D4694269" name="T_MM_POSICAO_PATIO">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>EAC17B87-C230-59A1-6F42-4671B55D0064</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_POSICAO" id="50830DC3-EADC-B7EB-C46C-A86D54AF24E3">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>7DC69426-5D78-B549-8C52-4B254F23EABA</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_MM_FILIAL_CD_FILIAL" id="3825D736-9918-28FA-ADED-2FFA329565A5">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>8823D6D7-560F-5657-F3FF-711664B218EB</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="742BB230-7720-09D1-C3DC-9DAC6CC99D70" referredColumn="69833CBC-B836-233F-AD18-0AFEF2689ACA"/>
+</associations>
+</Column>
+<Column name="CD_IDENTIFICACAO" id="F7F3419D-EE2A-8134-005F-1AFBAB831F30">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>2321D599-B23D-E1FA-C946-FD2DFE8EDA4A</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_FILA" id="DEF86777-B352-4B48-FF96-1B8F49D170D8">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>43F6B4AD-74F9-8125-F602-C9923F4729E9</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_COLUNA" id="9B91BF9B-9ABE-3D42-0701-BF0E087D7CCF">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>1B5A18AE-E918-E304-F8BA-4846B7E6940E</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_AREA" id="1E91D861-A43E-ED0D-8FD2-B1BC0AF0DD95">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>18EDB667-5027-D2E3-B292-08664755413D</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_OCUPADO" id="92CFAEA6-6E0E-AA7F-BDF5-CB7344249679">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>D5755E8A-1EB0-1168-FCA0-B4B476BD9006</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F7D3599-7A9D-FFCB-BA05-F1DD09175740" name="T_MM_POSICAO_PATIO_PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>E0E46AEA-EE05-211A-708C-B78428295FF8</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50830DC3-EADC-B7EB-C46C-A86D54AF24E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64378915-2C13-2BDF-2004-B6099F556E26" name="T_MM_POSICAO_PATIO_T_MM_FILIAL_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>8BDB91DE-9403-1C93-346A-3F3B66683E3B</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3825D736-9918-28FA-ADED-2FFA329565A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

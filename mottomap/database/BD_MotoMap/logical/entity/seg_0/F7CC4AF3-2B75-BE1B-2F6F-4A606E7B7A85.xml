@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F7CC4AF3-2B75-BE1B-2F6F-4A606E7B7A85" name="T_MM_FILIAL">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:22:49 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="CD_FILIAL" id="C069E5A2-11B0-E8FB-8613-FF27D909E467">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:24:55 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -31,7 +31,7 @@
 <Attribute name="NM_FILIAL" id="F8E0EA02-C765-C3ED-1C66-973F50388F6A">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:26:46 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -44,7 +44,7 @@
 <Attribute name="DS_ENDERECO" id="7E5C1FC6-FC62-029A-8FAA-38985273FA67">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:27:11 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -57,7 +57,7 @@
 <Attribute name="NM_CIDADE" id="3D023B20-232B-6A53-2DF0-EE4D2F7443FC">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:27:44 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -70,7 +70,7 @@
 <Attribute name="SG_ESTADO" id="E0A6C0AE-5B68-D35F-6CDC-33CFB047CD29">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:28:17 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -83,7 +83,7 @@
 <Attribute name="NR_LINHA" id="69493602-1C65-8092-2C05-40AD86D158CF">
 <createdBy>User</createdBy>
 <createdTime>2025-05-05 01:09:00 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -96,7 +96,7 @@
 <Attribute name="NR_COLUNA" id="56C8593B-56C6-F2BA-7F3C-36C517F98FC6">
 <createdBy>User</createdBy>
 <createdTime>2025-05-05 01:09:38 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -109,7 +109,7 @@
 <Attribute name="QT_CAPACIDADE_MAX" id="E76C1CB0-3A96-0185-9D5E-869CC29627BA">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:28:38 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -124,7 +124,7 @@
 <identifier id="9CC3CAEE-6DFE-F7B6-5676-689323A4F0FC" name="PK_FILIAL">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:31:14 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>

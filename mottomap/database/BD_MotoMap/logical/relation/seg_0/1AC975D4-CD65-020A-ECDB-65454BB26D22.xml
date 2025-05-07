@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CD_FILIAL" directorySegmentName="seg_0" id="D0908FB4-2E48-82DD-3788-85DB3CEA57B4">
-<createdBy>User</createdBy>
-<createdTime>2025-05-01 23:49:27 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CD_FILIALv2" directorySegmentName="seg_0" id="1AC975D4-CD65-020A-ECDB-65454BB26D22">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 22:59:48 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
 <sourcePk>9CC3CAEE-6DFE-F7B6-5676-689323A4F0FC</sourcePk>
-<identifying>true</identifying>
+<identifying>false</identifying>
 <nameOnTarget>CD_FILIAL</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>

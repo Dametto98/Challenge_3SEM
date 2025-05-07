@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D67A1DCA-CF90-1E24-B57E-A6ED7B3F7205" containerWithKeyObject="3CB646E0-D40C-B8E4-720D-11D9F746EC93" localFKIndex="89D27045-9AA5-FB04-B0F1-B85C268B91FE" name="T_MM_HISTORICO_POSICAO_T_MM_POSICAO_PATIO_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>3B37A100-7E05-5799-F000-D364B98B0670</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<referredTableLongName>T_MM_POSICAO_PATIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5B6B3F69-47E0-5CFF-0C7B-C396D4694269</referredTableID>
+<keyObject>8F7D3599-7A9D-FFCB-BA05-F1DD09175740</keyObject>
+<referredKeyID>8F7D3599-7A9D-FFCB-BA05-F1DD09175740</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_POSICAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

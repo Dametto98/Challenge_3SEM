@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95379905-B7E1-D45E-DE26-80001BB6E52C" name="T_MM_USUARIO">
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:56:01 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="CD_USUARIO" id="A830439B-C8B7-58DF-C791-5B21F46ED3CD">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:07:51 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -28,23 +28,25 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_FILIAL" id="134506FA-4FF6-3672-CE3D-846BA96D3CE8">
-<createdBy>User</createdBy>
-<createdTime>2025-05-02 00:40:14 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Attribute name="CD_FILIAL" id="93A58DB3-A40A-C2EC-39C9-0353324ACA43">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 22:59:19 UTC</createdTime>
+<generatorID>ED42BE2C-888F-D9E0-5B92-CEDA2DBBA486</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
+<referedAttribute>C069E5A2-11B0-E8FB-8613-FF27D909E467</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NM_USUARIO" id="E7A7D0F5-C418-187B-CF78-C77BDAB1ACF2">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:08:55 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -57,7 +59,7 @@
 <Attribute name="DS_EMAIL" id="1935F0AA-4F9B-C575-4DF6-B25820D64567">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:09:54 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -70,7 +72,7 @@
 <Attribute name="DS_SENHA" id="A0C6B60B-3B9E-C6DC-2430-569CCCD691E5">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:10:20 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -83,7 +85,7 @@
 <Attribute name="DS_TIPO" id="64C4AE23-B15D-FCB1-2210-82F67D40E251">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:10:54 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -93,27 +95,12 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_FILIAL1" id="7E3F131D-8A37-0D6E-D4C9-2FC75FC64607">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:39:58 UTC</createdTime>
-<generatorID>697356AC-55C8-ABF8-A713-81D14BEA829E</generatorID>
-<ownerDesignName>bd-inicial</ownerDesignName>
-<engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
-</engineerTo>
-<referedAttribute>C069E5A2-11B0-E8FB-8613-FF27D909E467</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D1944B8D-A868-24C5-3075-2CBF59A48FB5" name="PK_USUARIO">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:11:56 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>

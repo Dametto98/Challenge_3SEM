@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MOTOv3" directorySegmentName="seg_0" id="3EC1353C-FC74-D503-2A91-91CDC87F54F4">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:52:07 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CD_MOTO" directorySegmentName="seg_0" id="42A69EDE-BE21-6E0C-B808-FE7549AFBD96">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:06:04 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -14,7 +14,7 @@
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>C1821C4A-7387-6A4C-98E4-6774A0467486</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>5FE91113-4F30-EAC5-1C81-7979F4DF378E</targetEntity>
+<targetEntity>E30CFE71-DE44-BA14-0DF2-62E9DC14E5C4</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

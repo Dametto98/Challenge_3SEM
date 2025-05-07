@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_USUARIOv1" directorySegmentName="seg_0" id="002AEA20-F229-F7E3-CCBF-48F17B543817">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:51:00 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CD_USUARIOv2" directorySegmentName="seg_0" id="F1CFBAA3-7F5E-FC13-ABBD-C40C1BC576E3">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:08:12 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>

@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E30CFE71-DE44-BA14-0DF2-62E9DC14E5C4" name="T_MM_MOVIMENTACAO">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:47:01 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -18,7 +18,7 @@
 <Attribute name="CD_MOVIMENTACAO" id="B212709E-F9BF-67DA-214F-07439E8C0C28">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:47:15 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -28,36 +28,40 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_MOTO" id="0A1D7E98-6A35-04A7-A5F0-A2A5E4789C0C">
-<createdBy>User</createdBy>
-<createdTime>2025-05-02 00:47:44 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Attribute name="CD_USUARIO" id="2E5CB062-246C-F2DC-2DC5-D9D3CC862358">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:04:06 UTC</createdTime>
+<generatorID>0DD57813-E3B7-40B4-1F57-DCE07F218F59</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
+<referedAttribute>A830439B-C8B7-58DF-C791-5B21F46ED3CD</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_USUARIO" id="142D9101-E564-2F0B-4135-E70B24B15E85">
-<createdBy>User</createdBy>
-<createdTime>2025-05-02 00:49:30 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Attribute name="CD_MOTO" id="9324FD3F-10F3-869B-D660-6AC2C9C25AE3">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:06:04 UTC</createdTime>
+<generatorID>42A69EDE-BE21-6E0C-B808-FE7549AFBD96</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
+<referedAttribute>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DS_TIPO" id="F2CA73CF-772F-D716-0709-8B41FB295344">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:50:02 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -70,7 +74,7 @@
 <Attribute name="DT_HORA" id="CF57FDC8-D6EB-5D30-F1C1-A49E46ED6F5D">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:50:46 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -82,7 +86,7 @@
 <Attribute name="DS_OBSERVACOES" id="8C55C412-1068-EAA4-0A07-5D1343B4847B">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:52:03 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -92,41 +96,11 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_MOTO1" id="AA5152B2-04B9-AA9C-ED65-E22CF95B8121">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:48:05 UTC</createdTime>
-<generatorID>72C1E4EE-4370-6EC2-7BA1-768D6547E620</generatorID>
-<ownerDesignName>bd-inicial</ownerDesignName>
-<engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
-</engineerTo>
-<referedAttribute>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="CD_FILIAL" id="5D10D154-61E0-7BB2-660D-B7332D832E4E">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:48:05 UTC</createdTime>
-<generatorID>72C1E4EE-4370-6EC2-7BA1-768D6547E620</generatorID>
-<ownerDesignName>bd-inicial</ownerDesignName>
-<engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
-</engineerTo>
-<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="CD_FILIAL1" id="2D4EE54C-13D7-156C-8725-31D1C54A917B">
 <createdBy>User</createdBy>
 <createdTime>2025-05-05 01:48:05 UTC</createdTime>
 <generatorID>72C1E4EE-4370-6EC2-7BA1-768D6547E620</generatorID>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
@@ -135,21 +109,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_USUARIO1" id="FE90B35B-FED6-BD49-1903-EDF1A2568F50">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:49:39 UTC</createdTime>
-<generatorID>617ED727-052A-7F32-399F-59DA5FCA49F7</generatorID>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<Attribute name="CD_FILIAL" id="A8399A49-3EA8-8577-5823-922F4D81BDF7">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:06:04 UTC</createdTime>
+<generatorID>42A69EDE-BE21-6E0C-B808-FE7549AFBD96</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
-<referedAttribute>A830439B-C8B7-58DF-C791-5B21F46ED3CD</referedAttribute>
+<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
+<dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -157,7 +131,7 @@
 <identifier id="9A428E0F-72D7-1EA5-EF3D-0EBC7D3943B8" name="PK_MOVIMENTACAO">
 <createdBy>User</createdBy>
 <createdTime>2025-05-05 01:44:17 UTC</createdTime>
-<ownerDesignName>bd-inicial</ownerDesignName>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>

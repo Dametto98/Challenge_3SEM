@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83E61E56-B6A5-5F10-98E3-455D1A318968" containerWithKeyObject="3CB646E0-D40C-B8E4-720D-11D9F746EC93" localFKIndex="84229679-1EE6-072C-29A1-B4BD55E41A1D" name="T_MM_HISTORICO_POSICAO_T_MM_MOTO_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:12:51 UTC</createdTime>
+<generatorID>95B7DFA0-2E8D-81FB-5EE3-740591907565</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<referredTableLongName>T_MM_MOTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8AB340AD-A2DC-EA4B-C789-AC50074542ED</referredTableID>
+<keyObject>4D63C8B9-5B5E-AA65-E30F-3531803B625E</keyObject>
+<referredKeyID>4D63C8B9-5B5E-AA65-E30F-3531803B625E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_MOTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
