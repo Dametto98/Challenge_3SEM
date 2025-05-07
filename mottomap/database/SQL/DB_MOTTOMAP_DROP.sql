@@ -1,0 +1,16 @@
+--Nome: Caike Dametto RM: 558614
+--Nome: Guilhetme Janunzzi RM: 558461
+
+DROP TABLE t_mm_filial CASCADE CONSTRAINTS;
+
+DROP TABLE t_mm_historico_posicao CASCADE CONSTRAINTS;
+
+DROP TABLE t_mm_moto CASCADE CONSTRAINTS;
+
+DROP TABLE t_mm_movimentacao CASCADE CONSTRAINTS;
+
+DROP TABLE t_mm_posicao_patio CASCADE CONSTRAINTS;
+
+DROP TABLE t_mm_problema CASCADE CONSTRAINTS;
+
+DROP TABLE t_mm_usuario CASCADE CONSTRAINTS;
