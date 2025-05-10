@@ -2,93 +2,87 @@
 --Nome: Guilhetme Janunzzi RM: 558461
 
 CREATE TABLE T_MM_FILIAL (
-    cd_filial         NUMBER(8) NOT NULL,
-    nm_filial         VARCHAR2(150) NOT NULL,
-    ds_endereco       VARCHAR2(255) NOT NULL,
-    nm_cidade         VARCHAR2(100) NOT NULL,
-    sg_estado         VARCHAR2(2) NOT NULL,
-    nr_linha          NUMBER(4) NOT NULL,
-    nr_coluna         NUMBER(4) NOT NULL,
-    qt_capacidade_max NUMBER(6) NOT NULL
+    CD_FILIAL         NUMBER(8) NOT NULL,
+    NM_FILIAL         VARCHAR2(150) NOT NULL,
+    DS_ENDERECO       VARCHAR2(255) NOT NULL,
+    NM_CIDADE         VARCHAR2(100) NOT NULL,
+    SG_ESTADO         VARCHAR2(2) NOT NULL,
+    NR_LINHA          NUMBER(4) NOT NULL,
+    NR_COLUNA         NUMBER(4) NOT NULL,
+    QT_CAPACIDADE_MAX NUMBER(6) NOT NULL
 );
 
-ALTER TABLE t_mm_filial ADD CONSTRAINT t_mm_filial_pk PRIMARY KEY ( cd_filial );
+ALTER TABLE T_MM_FILIAL ADD CONSTRAINT PK_FILIAL PRIMARY KEY ( cd_filial );
 
-CREATE TABLE t_mm_historico_posicao (
-    cd_historico                  NUMBER(10) NOT NULL,
-    t_mm_moto_cd_moto             NUMBER(9) NOT NULL,
-    t_mm_posicao_patio_cd_posicao NUMBER(6) NOT NULL,
-    dt_inicio                     DATE NOT NULL,
-    dt_fim                        DATE,
-    cd_filial1                    NUMBER NOT NULL,
-    cd_filial                     NUMBER NOT NULL
+CREATE TABLE T_MM_USUARIO (
+    CD_USUCARIO           NUMBER(9) NOT NULL,
+    CD_FILIAL             NUMBER(8) NOT NULL,
+    NM_USUARIO            VARCHAR2(150) NOT NULL,
+    DS_EMAIL              VARCHAR2(100) NOT NULL,
+    DS_SENHA              VARCHAR2(200) NOT NULL,
+    DS_TIPO               VARCHAR2(20) NOT NULL
 );
 
-ALTER TABLE t_mm_historico_posicao ADD CONSTRAINT t_mm_historico_posicao_pk PRIMARY KEY ( cd_historico );
+ALTER TABLE T_MM_USUARIO ADD CONSTRAINT PK_USUARIO PRIMARY KEY ( cd_usuario );
 
-CREATE TABLE t_mm_moto (
-    cd_moto               NUMBER(9) NOT NULL,
-    t_mm_filial_cd_filial NUMBER(8) NOT NULL,
-    ds_placa              VARCHAR2(8),
-    ds_chassi             unknown 
---  ERROR: Datatype UNKNOWN is not allowed 
-    ,
-    nm_modelo             VARCHAR2(50) NOT NULL,
-    nr_ano                NUMBER(4) NOT NULL,
-    ds_status             VARCHAR2(20) NOT NULL
+CREATE TABLE T_MM_POSICAO_PATIO (
+    CD_POSICAO            NUMBER(6) NOT NULL,
+    CD_FILIAL             NUMBER(8) NOT NULL,
+    CD_IDENTIFICACAO      VARCHAR2(10) NOT NULL,
+    NR_FILA               NUMBER(4) NOT NULL,
+    NR_COLUNA             NUMBER(4) NOT NULL,
+    DS_AREA               VARCHAR2(50) NOT NULL,
+    DS_CUPADO             NUMBER(1) NOT NULL CHECK (ds_ocupado IN (0,1)) 
 );
 
-ALTER TABLE t_mm_moto ADD CONSTRAINT t_mm_moto_pk PRIMARY KEY ( cd_moto );
+ALTER TABLE T_MM_POSICAO_PATIO ADD CONSTRAINT PK_POSICAO PRIMARY KEY ( cd_posicao );
 
-CREATE TABLE t_mm_movimentacao (
-    cd_movimentacao         NUMBER(10) NOT NULL,
-    t_mm_usuario_cd_usuario NUMBER(9) NOT NULL,
-    t_mm_moto_cd_moto       NUMBER(9) NOT NULL,
-    ds_tipo                 VARCHAR2(20) NOT NULL,
-    dt_hora                 DATE NOT NULL,
-    ds_observacoes          VARCHAR2(255) NOT NULL,
-    cd_filial1              NUMBER NOT NULL,
-    cd_filial               NUMBER NOT NULL
+CREATE TABLE T_MM_MOTO (
+    CD_MOTO               NUMBER(9) NOT NULL,
+    CD_FILIAL             NUMBER(8) NOT NULL,
+    DS_PLACA              VARCHAR2(8),
+    DS_CHASSI             VARCHAR2(17),  
+    NM_MODELO             VARCHAR2(50) NOT NULL,
+    NR_ANO                NUMBER(4) NOT NULL,
+    DS_STATUS             VARCHAR2(20) NOT NULL
 );
 
-ALTER TABLE t_mm_movimentacao ADD CONSTRAINT t_mm_movimentacao_pk PRIMARY KEY ( cd_movimentacao );
+ALTER TABLE T_MM_MOTO ADD CONSTRAINT PK_MOTO PRIMARY KEY ( cd_moto );
 
-CREATE TABLE t_mm_posicao_patio (
-    cd_posicao            NUMBER(6) NOT NULL,
-    t_mm_filial_cd_filial NUMBER(8) NOT NULL,
-    cd_identificacao      VARCHAR2(10) NOT NULL,
-    nr_fila               NUMBER(4) NOT NULL,
-    nr_coluna             NUMBER(4) NOT NULL,
-    ds_area               VARCHAR2(50) NOT NULL,
-    ds_ocupado            NUMBER
+CREATE TABLE T_MM_HISTORICO_POSICAO (
+    CD_HISTORICO                  NUMBER(10) NOT NULL,
+    CD_MOTO                       NUMBER(9) NOT NULL,
+    CD_POSICAO                    NUMBER(6) NOT NULL,
+    DT_INICIO                     DATE NOT NULL,
+    DT_FIM                        DATE
 );
 
-ALTER TABLE t_mm_posicao_patio ADD CONSTRAINT t_mm_posicao_patio_pk PRIMARY KEY ( cd_posicao );
+ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT PK_HISTORICO PRIMARY KEY ( cd_historico );
+ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT FK_MOTO FOREIGN KEY ( cd_moto ) REFERENCES T_MM_MOTO ( cd_moto );
+ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT FK_POSICAO FOREIGN KEY ( cd_posicao ) REFERENCES T_MM_POSICAO_PATIO ( cd_posicao );
 
-CREATE TABLE t_mm_problema (
-    cd_problema             NUMBER(9) NOT NULL,
-    t_mm_moto_cd_moto       NUMBER(9) NOT NULL,
-    t_mm_usuario_cd_usuario NUMBER(9) NOT NULL,
-    ds_tipo                 VARCHAR2(20) NOT NULL,
-    ds_descricao            VARCHAR2(255) NOT NULL,
-    dt_registro             DATE NOT NULL,
-    ds_resolvido            CHAR(1) NOT NULL,
-    cd_filial1              NUMBER NOT NULL,
-    cd_filial               NUMBER NOT NULL
+CREATE TABLE T_MM_MOVIMENTACAO (
+    CD_MOVIMENTACAO         NUMBER(10) NOT NULL,
+    CD_USUARIO              NUMBER(9) NOT NULL,
+    CD_MOTO                 NUMBER(9) NOT NULL,
+    DS_TIPO                 VARCHAR2(20) NOT NULL,
+    DT_HORA                 DATE NOT NULL,
+    DS_OBSERVACOES          VARCHAR2(255) NOT NULL
 );
 
-ALTER TABLE t_mm_problema ADD CONSTRAINT t_mm_problema_pk PRIMARY KEY ( cd_problema );
+ALTER TABLE T_MM_MOVIMENTACAO ADD CONSTRAINT PK_MOVIMENTACAO PRIMARY KEY ( cd_movimentacao );
 
-CREATE TABLE t_mm_usuario (
-    cd_usuario            NUMBER(9) NOT NULL,
-    t_mm_filial_cd_filial NUMBER(8) NOT NULL,
-    nm_usuario            VARCHAR2(150) NOT NULL,
-    ds_email              VARCHAR2(100) NOT NULL,
-    ds_senha              VARCHAR2(200) NOT NULL,
-    ds_tipo               VARCHAR2(20) NOT NULL
+CREATE TABLE T_MM_PROBLEMA (
+    CD_PROBLEMA             NUMBER(9) NOT NULL,
+    CD_MOTO                 NUMBER(9) NOT NULL,
+    CD_USUARIO              NUMBER(9) NOT NULL,
+    DS_TIPO                 VARCHAR2(20) NOT NULL,
+    DS_DESCRICAO            VARCHAR2(255) NOT NULL,
+    DT_REGISTRO             DATE NOT NULL,
+    DS_RESOLVIDO            NUMBER(1) NOT NULL CHECK (ds_resolvido IN (0,1))
 );
 
-ALTER TABLE t_mm_usuario ADD CONSTRAINT t_mm_usuario_pk PRIMARY KEY ( cd_usuario );
+ALTER TABLE T_MM_PROBLEMA ADD CONSTRAINT PK_PROBLEMA PRIMARY KEY ( cd_problema );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE t_mm_historico_posicao
@@ -96,17 +90,11 @@ ALTER TABLE t_mm_historico_posicao
         REFERENCES t_mm_moto ( cd_moto );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_mm_historico_posicao
-    ADD CONSTRAINT t_mm_historico_posicao_t_mm_posicao_patio_fk FOREIGN KEY ( t_mm_posicao_patio_cd_posicao )
-        REFERENCES t_mm_posicao_patio ( cd_posicao );
+
 
 ALTER TABLE t_mm_moto
     ADD CONSTRAINT t_mm_moto_t_mm_filial_fk FOREIGN KEY ( t_mm_filial_cd_filial )
         REFERENCES t_mm_filial ( cd_filial );
-
-ALTER TABLE t_mm_movimentacao
-    ADD CONSTRAINT t_mm_movimentacao_t_mm_moto_fk FOREIGN KEY ( t_mm_moto_cd_moto )
-        REFERENCES t_mm_moto ( cd_moto );
 
 --  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE t_mm_movimentacao

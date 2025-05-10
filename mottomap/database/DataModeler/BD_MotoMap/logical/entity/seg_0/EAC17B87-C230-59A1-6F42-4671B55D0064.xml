@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="CD_IDENTIFICACAO" id="2321D599-B23D-E1FA-C946-FD2DFE8EDA4A">
 <createdBy>User</createdBy>
@@ -102,12 +102,11 @@
 <engineerTo>
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1 CHAR</dataTypeSize>
-<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -115,8 +114,9 @@
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:18:11 UTC</createdTime>
 <ownerDesignName>BD_MotoMap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>7DC69426-5D78-B549-8C52-4B254F23EABA</newElementsIDs>

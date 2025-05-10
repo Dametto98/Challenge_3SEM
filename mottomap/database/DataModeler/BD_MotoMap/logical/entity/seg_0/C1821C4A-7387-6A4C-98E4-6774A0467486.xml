@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DS_PLACA" id="1C23853D-F7F9-ADA6-9FDA-698EC67B6334">
 <createdBy>User</createdBy>
@@ -65,8 +65,11 @@
 <item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NM_MODELO" id="9336CD10-1FDE-EC9E-0590-080C58B15967">
 <createdBy>User</createdBy>
@@ -114,14 +117,14 @@
 <createdBy>User</createdBy>
 <createdTime>2025-05-01 23:45:03 UTC</createdTime>
 <ownerDesignName>BD_MotoMap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</newElementsIDs>
 <usedAttributes>
 <attributeRef>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</attributeRef>
-<attributeRef>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

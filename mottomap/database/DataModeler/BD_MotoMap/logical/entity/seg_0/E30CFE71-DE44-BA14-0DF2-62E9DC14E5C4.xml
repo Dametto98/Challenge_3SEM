@@ -96,21 +96,6 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_FILIAL1" id="2D4EE54C-13D7-156C-8725-31D1C54A917B">
-<createdBy>User</createdBy>
-<createdTime>2025-05-05 01:48:05 UTC</createdTime>
-<generatorID>72C1E4EE-4370-6EC2-7BA1-768D6547E620</generatorID>
-<ownerDesignName>BD_MotoMap</ownerDesignName>
-<engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
-</engineerTo>
-<referedAttribute>9A6042D6-E5DE-E5EA-9765-EDC38DCF6604</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,8,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="CD_FILIAL" id="A8399A49-3EA8-8577-5823-922F4D81BDF7">
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-07 23:06:04 UTC</createdTime>
@@ -124,7 +109,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -132,8 +117,9 @@
 <createdBy>User</createdBy>
 <createdTime>2025-05-05 01:44:17 UTC</createdTime>
 <ownerDesignName>BD_MotoMap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>B212709E-F9BF-67DA-214F-07439E8C0C28</newElementsIDs>
