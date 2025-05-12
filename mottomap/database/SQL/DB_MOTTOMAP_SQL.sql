@@ -12,10 +12,10 @@ CREATE TABLE T_MM_FILIAL (
     QT_CAPACIDADE_MAX NUMBER(6) NOT NULL
 );
 
-ALTER TABLE T_MM_FILIAL ADD CONSTRAINT PK_FILIAL PRIMARY KEY ( cd_filial );
+ALTER TABLE T_MM_FILIAL ADD CONSTRAINT PK_FILIAL_MOTOMAP PRIMARY KEY ( cd_filial );
 
 CREATE TABLE T_MM_USUARIO (
-    CD_USUCARIO           NUMBER(9) NOT NULL,
+    CD_USUARIO           NUMBER(9) NOT NULL,
     CD_FILIAL             NUMBER(8) NOT NULL,
     NM_USUARIO            VARCHAR2(150) NOT NULL,
     DS_EMAIL              VARCHAR2(100) NOT NULL,
@@ -23,7 +23,8 @@ CREATE TABLE T_MM_USUARIO (
     DS_TIPO               VARCHAR2(20) NOT NULL
 );
 
-ALTER TABLE T_MM_USUARIO ADD CONSTRAINT PK_USUARIO PRIMARY KEY ( cd_usuario );
+ALTER TABLE T_MM_USUARIO ADD CONSTRAINT PK_USUARIO_MOTOMAP PRIMARY KEY ( cd_usuario );
+ALTER TABLE T_MM_USUARIO ADD CONSTRAINT FK_CD_FILIAL_USUARIO FOREIGN KEY ( cd_filial ) REFERENCES T_MM_FILIAL ( cd_filial );
 
 CREATE TABLE T_MM_POSICAO_PATIO (
     CD_POSICAO            NUMBER(6) NOT NULL,
@@ -32,10 +33,11 @@ CREATE TABLE T_MM_POSICAO_PATIO (
     NR_FILA               NUMBER(4) NOT NULL,
     NR_COLUNA             NUMBER(4) NOT NULL,
     DS_AREA               VARCHAR2(50) NOT NULL,
-    DS_CUPADO             NUMBER(1) NOT NULL CHECK (ds_ocupado IN (0,1)) 
+    DS_OCUPADO             NUMBER(1) NOT NULL CHECK (ds_ocupado IN (0,1)) 
 );
 
-ALTER TABLE T_MM_POSICAO_PATIO ADD CONSTRAINT PK_POSICAO PRIMARY KEY ( cd_posicao );
+ALTER TABLE T_MM_POSICAO_PATIO ADD CONSTRAINT PK_POSICAO_MOTOMAP PRIMARY KEY ( cd_posicao );
+ALTER TABLE T_MM_POSICAO_PATIO ADD CONSTRAINT FK_CD_FILIAL_POSICAO FOREIGN KEY ( cd_filial ) REFERENCES T_MM_FILIAL ( cd_filial );
 
 CREATE TABLE T_MM_MOTO (
     CD_MOTO               NUMBER(9) NOT NULL,
@@ -47,30 +49,8 @@ CREATE TABLE T_MM_MOTO (
     DS_STATUS             VARCHAR2(20) NOT NULL
 );
 
-ALTER TABLE T_MM_MOTO ADD CONSTRAINT PK_MOTO PRIMARY KEY ( cd_moto );
-
-CREATE TABLE T_MM_HISTORICO_POSICAO (
-    CD_HISTORICO                  NUMBER(10) NOT NULL,
-    CD_MOTO                       NUMBER(9) NOT NULL,
-    CD_POSICAO                    NUMBER(6) NOT NULL,
-    DT_INICIO                     DATE NOT NULL,
-    DT_FIM                        DATE
-);
-
-ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT PK_HISTORICO PRIMARY KEY ( cd_historico );
-ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT FK_MOTO FOREIGN KEY ( cd_moto ) REFERENCES T_MM_MOTO ( cd_moto );
-ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT FK_POSICAO FOREIGN KEY ( cd_posicao ) REFERENCES T_MM_POSICAO_PATIO ( cd_posicao );
-
-CREATE TABLE T_MM_MOVIMENTACAO (
-    CD_MOVIMENTACAO         NUMBER(10) NOT NULL,
-    CD_USUARIO              NUMBER(9) NOT NULL,
-    CD_MOTO                 NUMBER(9) NOT NULL,
-    DS_TIPO                 VARCHAR2(20) NOT NULL,
-    DT_HORA                 DATE NOT NULL,
-    DS_OBSERVACOES          VARCHAR2(255) NOT NULL
-);
-
-ALTER TABLE T_MM_MOVIMENTACAO ADD CONSTRAINT PK_MOVIMENTACAO PRIMARY KEY ( cd_movimentacao );
+ALTER TABLE T_MM_MOTO ADD CONSTRAINT PK_MOTO_MOTOMAP PRIMARY KEY ( cd_moto );
+ALTER TABLE T_MM_MOTO ADD CONSTRAINT FK_CD_FILIAL_MOTO FOREIGN KEY ( cd_filial ) REFERENCES T_MM_FILIAL ( cd_filial );
 
 CREATE TABLE T_MM_PROBLEMA (
     CD_PROBLEMA             NUMBER(9) NOT NULL,
@@ -82,38 +62,31 @@ CREATE TABLE T_MM_PROBLEMA (
     DS_RESOLVIDO            NUMBER(1) NOT NULL CHECK (ds_resolvido IN (0,1))
 );
 
-ALTER TABLE T_MM_PROBLEMA ADD CONSTRAINT PK_PROBLEMA PRIMARY KEY ( cd_problema );
+ALTER TABLE T_MM_PROBLEMA ADD CONSTRAINT PK_PROBLEMA_MOTOMAP PRIMARY KEY ( cd_problema );
+ALTER TABLE T_MM_PROBLEMA ADD CONSTRAINT FK_MOTO_PROBLEMA FOREIGN KEY ( cd_moto ) REFERENCES T_MM_MOTO ( cd_moto );
+ALTER TABLE T_MM_PROBLEMA ADD CONSTRAINT FK_USUARIO_PROBLEMA FOREIGN KEY ( cd_usuario ) REFERENCES T_MM_USUARIO ( cd_usuario );
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_mm_historico_posicao
-    ADD CONSTRAINT t_mm_historico_posicao_t_mm_moto_fk FOREIGN KEY ( t_mm_moto_cd_moto )
-        REFERENCES t_mm_moto ( cd_moto );
+CREATE TABLE T_MM_HISTORICO_POSICAO (
+    CD_HISTORICO                  NUMBER(10) NOT NULL,
+    CD_MOTO                       NUMBER(9) NOT NULL,
+    CD_POSICAO                    NUMBER(6) NOT NULL,
+    DT_INICIO                     DATE NOT NULL,
+    DT_FIM                        DATE
+);
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
+ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT PK_HISTORICO_MOTOMAP PRIMARY KEY ( cd_historico );
+ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT FK_MOTO_HISTORICO FOREIGN KEY ( cd_moto ) REFERENCES T_MM_MOTO ( cd_moto );
+ALTER TABLE T_MM_HISTORICO_POSICAO ADD CONSTRAINT FK_POSICAO_HISTORICO FOREIGN KEY ( cd_posicao ) REFERENCES T_MM_POSICAO_PATIO ( cd_posicao );
 
+CREATE TABLE T_MM_MOVIMENTACAO (
+    CD_MOVIMENTACAO         NUMBER(10) NOT NULL,
+    CD_USUARIO              NUMBER(9) NOT NULL,
+    CD_MOTO                 NUMBER(9) NOT NULL,
+    DS_TIPO                 VARCHAR2(20) NOT NULL,
+    DT_HORA                 DATE NOT NULL,
+    DS_OBSERVACOES          VARCHAR2(255) NOT NULL
+);
 
-ALTER TABLE t_mm_moto
-    ADD CONSTRAINT t_mm_moto_t_mm_filial_fk FOREIGN KEY ( t_mm_filial_cd_filial )
-        REFERENCES t_mm_filial ( cd_filial );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_mm_movimentacao
-    ADD CONSTRAINT t_mm_movimentacao_t_mm_usuario_fk FOREIGN KEY ( t_mm_usuario_cd_usuario )
-        REFERENCES t_mm_usuario ( cd_usuario );
-
---  ERROR: FK name length exceeds maximum allowed length(30) 
-ALTER TABLE t_mm_posicao_patio
-    ADD CONSTRAINT t_mm_posicao_patio_t_mm_filial_fk FOREIGN KEY ( t_mm_filial_cd_filial )
-        REFERENCES t_mm_filial ( cd_filial );
-
-ALTER TABLE t_mm_problema
-    ADD CONSTRAINT t_mm_problema_t_mm_moto_fk FOREIGN KEY ( t_mm_moto_cd_moto )
-        REFERENCES t_mm_moto ( cd_moto );
-
-ALTER TABLE t_mm_problema
-    ADD CONSTRAINT t_mm_problema_t_mm_usuario_fk FOREIGN KEY ( t_mm_usuario_cd_usuario )
-        REFERENCES t_mm_usuario ( cd_usuario );
-
-ALTER TABLE t_mm_usuario
-    ADD CONSTRAINT t_mm_usuario_t_mm_filial_fk FOREIGN KEY ( t_mm_filial_cd_filial )
-        REFERENCES t_mm_filial ( cd_filial );
+ALTER TABLE T_MM_MOVIMENTACAO ADD CONSTRAINT PK_MOVIMENTACAO_MOTOMAP PRIMARY KEY ( cd_movimentacao );
+ALTER TABLE T_MM_MOVIMENTACAO ADD CONSTRAINT FK_USUARIO_MOVIMENTACAO FOREIGN KEY ( cd_usuario ) REFERENCES T_MM_USUARIO ( cd_usuario );
+ALTER TABLE T_MM_MOVIMENTACAO ADD CONSTRAINT FK_MOTO_MOVIMENTACAO FOREIGN KEY ( cd_moto ) REFERENCES T_MM_MOTO ( cd_moto );
