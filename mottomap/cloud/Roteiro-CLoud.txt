@@ -1,0 +1,196 @@
+----------------------------------------Configurando o projeto JAVA
+
+--Dentro da pasta do projeto cloud(Fazer pelo VSCODE)
+
+git clone https://github.com/GuiJanunzzi/MottoMap-JavaBackend.git
+
+--No terminal do projeto JAVA
+mvn clean package//criar o .jar
+
+-----------------------------------------DOCKER FILE
+
+----Dentro da pasta do projeto cloud(Fazer pelo VSCODE)
+
+--ARQUIVO Dockerfile
+# Use a imagem JRE (mais leve que o JDK)
+FROM eclipse-temurin:17-jre-alpine
+
+# Diretório de trabalho
+WORKDIR /app
+
+# Copie o arquivo JAR (ajuste o caminho conforme sua estrutura)
+COPY ./MottoMap-JavaBackend/target/*.jar app.jar
+
+# Exponha a porta padrão do Spring Boot
+EXPOSE 8080
+
+# Criar usuário sem privilégios
+RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
+
+# Mudar permissões e trocar para o usuário
+USER appuser
+
+# Comando para executar a aplicação
+ENTRYPOINT ["java", "-jar", "app.jar"] 
+
+--TERMINAL VsCode
+
+docker build -t mottomap_backend:1.0 .
+
+docker run -d -p 8080:8080  mottomap_backend:1.0
+
+docker ps
+
+//Comandos para subir a imagem para o DockerHub
+
+docker tag mottomap_backend:1.0 guijanunzzi/mottomap_backend:1.0
+
+docker images
+
+docker push guijanunzzi/mottomap_backend:1.0
+
+-----------TESTE DOCKER LOCAL
+
+SWAGGER
+http://host.docker.internal:8080/swagger-ui/index.html
+
+INSOMNIA
+host.docker.internal:8080
+
+--------------------------------------------AZURE CLI
+
+--Criando o Resource Group
+az group create -l eastus -n rg-mottomap
+
+--Crinado a VM
+az vm create --resource-group rg-mottomap --name vm-linux-mottomap --image Canonical:ubuntu-24_04-lts:minimal:24.04.202505020 --size Standard_B2s --admin-username admin_fiap --admin-password admin_fiap@123
+
+-- Liberando a Porta 8080
+az network nsg rule create --resource-group rg-mottomap --nsg-name vm-linux-mottomapNSG --name port_8080 --protocol tcp --priority 1010 --destination-port-range 8080
+
+-- Liberando a Porta 80
+az network nsg rule create --resource-group rg-mottomap --nsg-name vm-linux-mottomapNSG --name port_80 --protocol tcp --priority 1020 --destination-port-range 80
+
+--Instalar o docker na VM
+Link Instalação: 
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+--Rodar o container
+sudo docker run -d -p 8080:8080  guijanunzzi/mottomap_backend:1.0
+
+--Verificar ativos
+sudo docker ps
+
+--DENTRO DA VM
+
+
+------------TESTE VM IP
+--SWAGGER
+----IP público da Maquina----:8080/swagger-ui/index.html
+
+--INSOMINIA
+----IP público da Maquina----:8080/filial
+
+========================================
+1. CONFIGURANDO O PROJETO JAVA
+========================================
+
+Dentro da pasta do projeto cloud (usar o VS Code):
+
+Clonar o repositório:
+git clone https://github.com/GuiJanunzzi/MottoMap-JavaBackend.git
+
+No terminal, dentro da pasta do projeto clonado:
+mvn clean package    # Gera o arquivo .jar
+
+
+========================================
+2. CRIANDO O DOCKERFILE
+========================================
+
+Criar um arquivo chamado 'Dockerfile' na raiz do projeto:
+
+Conteúdo do Dockerfile:
+-----------------------------
+FROM eclipse-temurin:17-jre-alpine
+
+WORKDIR /app
+
+COPY ./MottoMap-JavaBackend/target/*.jar app.jar
+
+EXPOSE 8080
+
+RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
+
+USER appuser
+
+ENTRYPOINT ["java", "-jar", "app.jar"] 
+-----------------------------
+
+
+========================================
+3. CONSTRUIR E EXECUTAR O CONTAINER LOCALMENTE
+========================================
+
+No terminal (dentro do projeto):
+docker build -t mottomap_backend:1.0 .
+docker run -d -p 8080:8080 mottomap_backend:1.0
+docker ps
+
+
+========================================
+4. PUBLICAR IMAGEM NO DOCKER HUB
+========================================
+
+docker tag mottomap_backend:1.0 guijanunzzi/mottomap_backend:1.0
+docker push guijanunzzi/mottomap_backend:1.0
+
+
+========================================
+5. TESTE DOCKER LOCAL
+========================================
+
+Swagger:
+http://host.docker.internal:8080/swagger-ui/index.html
+
+Insomnia:
+host.docker.internal:8080
+
+
+========================================
+6. CONFIGURAÇÃO AZURE CLI
+========================================
+
+Criar Resource Group:
+az group create -l eastus -n rg-mottomap
+
+Criar Máquina Virtual:
+az vm create --resource-group rg-mottomap --name vm-linux-mottomap --image Canonical:ubuntu-24_04-lts:minimal:24.04.202505020 --size Standard_B2s --admin-username admin_fiap --admin-password admin_fiap@123
+
+Liberar a porta 8080:
+az network nsg rule create --resource-group rg-mottomap --nsg-name vm-linux-mottomapNSG --name port_8080 --protocol tcp --priority 1010 --destination-port-range 8080
+
+Liberar a porta 80:
+az network nsg rule create --resource-group rg-mottomap --nsg-name vm-linux-mottomapNSG --name port_80 --protocol tcp --priority 1020 --destination-port-range 80
+
+
+========================================
+7. CONFIGURAÇÃO NA VM (UBUNTU)
+========================================
+
+Instalar o Docker na VM (seguir documentação oficial):
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+Executar o container na VM:
+docker run -d -p 8080:8080 guijanunzzi/mottomap_backend:1.0
+
+
+========================================
+8. TESTE NA VM (AZURE)
+========================================
+
+Swagger:
+http://<IP_Público_VM>:8080/swagger-ui/index.html
+
+Insomnia:
+<IP_Público_VM>:8080/filial
