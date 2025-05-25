@@ -1,12 +1,3 @@
-### 🛠️ **Etapa 1: Build com Maven**
-
-```dockerfile
-FROM maven:3.9.6-eclipse-temurin-17-alpine AS build
-WORKDIR /build
-COPY MottoMap-JavaBackend/ ./MottoMap-JavaBackend/
-WORKDIR /build/MottoMap-JavaBackend
-```
-
 **Explicação:**
 
 * “Começamos usando uma imagem do Maven com Java 17 para compilar o projeto.”
@@ -14,69 +5,18 @@ WORKDIR /build/MottoMap-JavaBackend
 * “Depois copiamos o código-fonte do projeto para dentro da imagem Docker.”
 * “Em seguida, mudamos para o diretório do projeto para poder executar os comandos do Maven.”
 
----
-
-### 🚀 **Etapa 2: Criar imagem final leve**
-
-```dockerfile
-FROM eclipse-temurin:17-jre-alpine
-WORKDIR /app
-```
-
-**Explicação:**
-
 * “Aqui começa a segunda etapa: usamos uma imagem menor, com apenas o Java Runtime (JRE), sem o Maven.”
 * “Isso reduz muito o tamanho da imagem final, ideal para produção.”
 
----
-
-### 📦 **Copiar o JAR do build**
-
-```dockerfile
-COPY --from=build /build/MottoMap-JavaBackend/target/*.jar app.jar
-```
-
-**Explicação:**
-
 * “Usamos o `COPY --from=build` para pegar o arquivo `.jar` que foi gerado na etapa anterior e trazê-lo para essa imagem final.”
-
----
-
-### 👤 **Segurança: usuário sem privilégios**
-
-```dockerfile
-RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
-USER appuser
-```
-
-**Explicação:**
 
 * “Por padrão, containers rodam como root, o que é perigoso.”
 * “Aqui criamos um usuário comum chamado `appuser`, e configuramos o container para rodar com esse usuário. Isso é uma boa prática de segurança.”
 
----
-
-### 🌐 **Porta e comando de execução**
-
-```dockerfile
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
-```
-
-**Explicação:**
-
-* “Com `EXPOSE 8080`, estamos dizendo que o container vai escutar na porta 8080 — útil para o mapeamento de portas.”
+* “Com `EXPOSE 8080`, estamos dizendo que o container vai escutar na porta 8080”
 * “E o `ENTRYPOINT` define o comando que será executado quando o container iniciar: ele vai rodar a aplicação com Java.”
 
----
-
-### ✅ **Resumo final**
-
-> “Com esse Dockerfile, conseguimos compilar uma aplicação Java usando Maven em uma imagem separada, e depois rodá-la em uma imagem mais leve e segura, pronta para produção.”
-
----
-
-Se quiser, posso montar um **roteiro narrado completo** ou até te ajudar com os slides ou imagens para o vídeo. Deseja isso?
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ----------------------------------------Configurando o projeto JAVA
 
@@ -119,7 +59,7 @@ docker ps
 -----------TESTE DOCKER LOCAL
 
 SWAGGER
-http://host.docker.internal:8080/swagger-ui/index.html
+http://localhost:8080/swagger-ui/index.html
 
 INSOMNIA
 host.docker.internal:8080
