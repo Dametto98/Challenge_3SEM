@@ -1,14 +1,18 @@
-# Use a imagem JRE (mais leve que o JDK)
-FROM eclipse-temurin:17-jre-alpine
+FROM maven:3.9.6-eclipse-temurin-17-alpine AS build
+WORKDIR /build
 
-# Diretório de trabalho
+COPY MottoMap-JavaBackend/ ./MottoMap-JavaBackend/
+WORKDIR /build/MottoMap-JavaBackend
+ 
+RUN mvn clean package -DskipTests
+
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
-# Copie o arquivo JAR (ajuste o caminho conforme sua estrutura)
-COPY ./MottoMap-JavaBackend/target/*.jar app.jar
+COPY --from=build /build/MottoMap-JavaBackend/target/*.jar app.jar
 
-# Exponha a porta padrão do Spring Boot
+RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
+ 
+USER appuser
 EXPOSE 8080
-
-# Comando para executar a aplicação
-ENTRYPOINT ["java", "-jar", "app.jar"]  
+ENTRYPOINT ["java", "-jar", "app.jar"]
