@@ -86,5 +86,5 @@ Estes resultados indicam que os metadados por si só já possuem um bom poder pr
 [Se aplicável, como outras pessoas podem contribuir para o projeto. Para um projeto de faculdade, isso pode não ser necessário.]
 
 ## 📄 Pitch
-link do pitch relacionado ao modelo 
+https://youtu.be/VtdsDGwazFI?si=RaK5dR4x30QLxcNL
 
