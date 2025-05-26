@@ -29,7 +29,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -72,7 +72,7 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DS_TIPO" id="682EC954-DD19-3E06-506B-E564DF6B4A6C">
+<Column name="DS_CARGO" id="682EC954-DD19-3E06-506B-E564DF6B4A6C">
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-07 23:12:51 UTC</createdTime>
 <generatorID>64C4AE23-B15D-FCB1-2210-82F67D40E251</generatorID>

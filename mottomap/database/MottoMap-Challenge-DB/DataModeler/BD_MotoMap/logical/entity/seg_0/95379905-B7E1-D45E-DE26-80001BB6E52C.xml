@@ -41,7 +41,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NM_USUARIO" id="E7A7D0F5-C418-187B-CF78-C77BDAB1ACF2">
 <createdBy>User</createdBy>
@@ -82,7 +82,7 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DS_TIPO" id="64C4AE23-B15D-FCB1-2210-82F67D40E251">
+<Attribute name="DS_CARGO" id="64C4AE23-B15D-FCB1-2210-82F67D40E251">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:10:54 UTC</createdTime>
 <ownerDesignName>BD_MotoMap</ownerDesignName>
@@ -101,8 +101,9 @@
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:11:56 UTC</createdTime>
 <ownerDesignName>BD_MotoMap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>A830439B-C8B7-58DF-C791-5B21F46ED3CD</newElementsIDs>

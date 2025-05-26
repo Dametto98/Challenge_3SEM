@@ -56,7 +56,7 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="NR_FILA" id="43F6B4AD-74F9-8125-F602-C9923F4729E9">
+<Attribute name="NR_LINHA" id="43F6B4AD-74F9-8125-F602-C9923F4729E9">
 <createdBy>User</createdBy>
 <createdTime>2025-05-02 00:32:47 UTC</createdTime>
 <ownerDesignName>BD_MotoMap</ownerDesignName>

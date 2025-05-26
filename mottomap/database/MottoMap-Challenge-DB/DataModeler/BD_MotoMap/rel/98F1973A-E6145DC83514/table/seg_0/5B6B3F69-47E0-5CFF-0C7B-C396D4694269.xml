@@ -48,7 +48,7 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="NR_FILA" id="DEF86777-B352-4B48-FF96-1B8F49D170D8">
+<Column name="NR_LINHA" id="DEF86777-B352-4B48-FF96-1B8F49D170D8">
 <createdBy>labsfiap</createdBy>
 <createdTime>2025-05-07 23:12:51 UTC</createdTime>
 <generatorID>43F6B4AD-74F9-8125-F602-C9923F4729E9</generatorID>
