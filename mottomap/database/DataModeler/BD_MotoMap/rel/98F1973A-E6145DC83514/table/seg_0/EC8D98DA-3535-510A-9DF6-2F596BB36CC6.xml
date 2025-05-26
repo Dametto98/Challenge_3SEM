@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC8D98DA-3535-510A-9DF6-2F596BB36CC6" name="T_MM_MOTO">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>C1821C4A-7387-6A4C-98E4-6774A0467486</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_MOTO" id="5F68915E-D7C6-21A0-BAD6-5C1E7D91DE93">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>F8F6B356-ED08-38F3-7421-38C28D7A3E4A</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_MM_FILIAL_CD_FILIAL" id="C9797B08-5905-A434-66A5-891F1B8506C3">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>E7165272-9FB8-1A08-6BD2-C58B4D6335A3</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2FAF5C89-100C-12E2-AC93-00BF1BB14B2E" referredColumn="D4A989B6-6122-68A2-183A-9971A68256AB"/>
+</associations>
+</Column>
+<Column name="DS_PLACA" id="808E3FBE-4ECF-5CA7-A1C2-43205ECD38B9">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>1C23853D-F7F9-ADA6-9FDA-698EC67B6334</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CHASSI" id="31628D79-C889-781F-1F86-E398753682DD">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>D174AC5C-CC65-A0A2-3C70-4C3CB003E492</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_MODELO" id="20F2F0FB-5F67-4029-3547-749DCBB8C61E">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>9336CD10-1FDE-EC9E-0590-080C58B15967</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ANO" id="04EF01FD-3DEE-1305-AF00-8281CE4CBB17">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>D34992A2-FB79-8E2B-6BE2-360217EF3B66</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_STATUS" id="CE835495-0790-0BC2-4EB0-CFB95740457C">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<comment><![CDATA["Ativa", "Inativa", etc.]]></comment>
+<generatorID>AD8B2E24-9E89-60D3-062C-E8F49F30238B</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E25BFF10-ED08-1BA9-5296-4A86CDD33B2E" name="T_MM_MOTO_PK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>40678E38-CE6B-A158-D765-6ADD674A7D80</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F68915E-D7C6-21A0-BAD6-5C1E7D91DE93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0ED4FE93-9501-A6FA-B6E4-78ECB34DF301" name="T_MM_MOTO_T_MM_FILIAL_FK">
+<createdBy>User</createdBy>
+<createdTime>2025-05-25 20:50:55 UTC</createdTime>
+<generatorID>1AC975D4-CD65-020A-ECDB-65454BB26D22</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9797B08-5905-A434-66A5-891F1B8506C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

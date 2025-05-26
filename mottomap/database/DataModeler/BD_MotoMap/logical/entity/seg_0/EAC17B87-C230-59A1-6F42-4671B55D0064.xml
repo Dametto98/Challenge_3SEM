@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAC17B87-C230-59A1-6F42-4671B55D0064" name="T_MM_POSICAO_PATIO">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:17:25 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_POSICAO" id="7DC69426-5D78-B549-8C52-4B254F23EABA">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:17:47 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_FILIAL" id="8823D6D7-560F-5657-F3FF-711664B218EB">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-07 23:00:13 UTC</createdTime>
+<generatorID>8BDB91DE-9403-1C93-346A-3F3B66683E3B</generatorID>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<referedAttribute>C069E5A2-11B0-E8FB-8613-FF27D909E467</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_IDENTIFICACAO" id="2321D599-B23D-E1FA-C946-FD2DFE8EDA4A">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:25:10 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LINHA" id="43F6B4AD-74F9-8125-F602-C9923F4729E9">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:32:47 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_COLUNA" id="1B5A18AE-E918-E304-F8BA-4846B7E6940E">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:34:38 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_AREA" id="18EDB667-5027-D2E3-B292-08664755413D">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:35:10 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_OCUPADO" id="D5755E8A-1EB0-1168-FCA0-B4B476BD9006">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:35:28 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E0E46AEA-EE05-211A-708C-B78428295FF8" name="PK_POSICAO">
+<createdBy>User</createdBy>
+<createdTime>2025-05-02 00:18:11 UTC</createdTime>
+<ownerDesignName>BD_MotoMap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="98F1973A-BD97-A1C3-3C13-E6145DC83514" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>7DC69426-5D78-B549-8C52-4B254F23EABA</newElementsIDs>
+<usedAttributes>
+<attributeRef>7DC69426-5D78-B549-8C52-4B254F23EABA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
